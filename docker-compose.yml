@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_db
+    environment:
+      - POSTGRES_DB=biblioteca_db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
+
+  api:
+    build: 
+      context: ./backend  
+    container_name: spring_backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/biblioteca_db
+      - SPRING_DATASOURCE_USERNAME=user
+      - SPRING_DATASOURCE_PASSWORD=password
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    ports:
+      - 15672:15672
+      - 5672:5672
+  web:
+    build:
+      context: ./frontend 
+    container_name: angular_frontend
+    ports:
+      - "80:80"
