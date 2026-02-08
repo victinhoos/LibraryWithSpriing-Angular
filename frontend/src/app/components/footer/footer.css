@@ -7,6 +7,7 @@ footer {
 
 .footer-decoration a {
     color: var(--secondary-color);
+    cursor: pointer;
 }
 .footer-redes-socais, 
 .footer-informacao {
