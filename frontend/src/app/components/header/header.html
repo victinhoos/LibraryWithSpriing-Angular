@@ -1,0 +1,49 @@
+<header class="main-header">
+    <a routerLink="/" class="brand-logo">
+       <H1>Adriano</H1>
+    </a>
+
+    <nav class="header-navbar">
+        <ul class="header-links">
+            
+            <li>
+                <a routerLink="/livros" class="header-link-swap" routerLinkActive="active-link">
+                    <img src="assets/icones/book_4.svg" alt="Livros" class="header-icon-base header-icon-normal">
+                    <img src="assets/icones/book_5.svg" alt="Livros" class="header-icon-base header-icon-hover">
+                    Livros
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/Eventos" class="header-link-swap" routerLinkActive="active-link">
+                    <img src="assets/icones/artist.svg" alt="Eventos" class="header-icon-base header-icon-normal">
+                    <img src="assets/icones/music_note_2.svg" alt="Eventos" class="header-icon-base header-icon-hover">
+                    Eventos
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/login" class="btn-login header-link-swap" routerLinkActive="active-link"> 
+                    <img src="assets/icones/person.svg" alt="Entrar" class="header-icon-base header-icon-normal">
+                    <img src="assets/icones/person_edit.svg" alt="Entrar" class="header-icon-base header-icon-hover">
+                    Entrar
+                </a>
+            </li>
+
+            <li>
+                <form [formGroup]="HeaderFormulario" (ngSubmit)="onSubmit()" class="search-form-youtube">
+                    <div class="input-group">
+                        <input formControlName="nome" placeholder="Pesquise por gênero, editora ou livro">
+                        <button type="button" class="btn-icon-clear" (click)="clearForm()">
+                            <img src="assets/icones/close.svg" alt="Limpar" class="icon-search-ui">
+                        </button>
+                    </div>
+                    <button type="submit" class="btn-icon-search">
+                        <img src="assets/icones/send.svg" alt="Pesquisar" class="icon-search-ui">
+                    </button>
+                </form>
+            </li>
+
+        </ul>
+    </nav>
+</header>

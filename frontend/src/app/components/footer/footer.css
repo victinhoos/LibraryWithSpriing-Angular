@@ -1,0 +1,39 @@
+footer {
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    background-color: var(--primary-color);
+    color: var(--text-color-primary);
+}
+
+.footer-decoration a {
+    color: var(--secondary-color);
+}
+.footer-redes-socais, 
+.footer-informacao {
+    margin: 0;        
+}
+
+.footer-card h1, 
+.footer-card h2 {
+    margin-top: 0;    
+    margin-bottom: 1rem; 
+}
+.footer-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.footer-card {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-bottom {
+    display: flex;
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

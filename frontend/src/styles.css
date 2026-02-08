@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+  --primary-color: #0054E6;
+  --secondary-color: #1bdd6c;
+  --tertiary-color: #ffe600;
+
+  --text-color-primary: #ffffff;
+  --text-color: #333333;      
+  --bg-color: #f4f6f9;
+  --bg-color-variant: #dadcdf;        
+
+  
+  --font-xs: 0.75rem;    
+  --font-sm: 0.875rem;   
+  --font-base: 1rem;     
+  --font-lg: 1.25rem;    
+  --font-xl: 2rem;       
+  --font-xxl: 3rem;      
+
+  --font-title: 'Roboto', 'Segoe UI', Helvetica, Arial;
+  --font-main: 'Segoe UI', Helvetica, Arial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-base); 
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  line-height: 1.5; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: var(--font-xl,); font-family: var(--font-title); }
+h2 { font-size: var(--font-lg); font-family: var(--font-title);}
+
+a{
+  text-decoration: 0;
+  color: var(--text-color-primary);
+}
+
+li{
+  list-style: none;
+}

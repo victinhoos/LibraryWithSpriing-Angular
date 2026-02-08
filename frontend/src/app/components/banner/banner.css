@@ -1,0 +1,27 @@
+.banner-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0; 
+}
+
+.banner-item {
+  display: none; 
+  width: 100%;
+  animation: fadeEffect 1.5s
+}
+
+.banner-item.active {
+  display: block;
+}
+
+.banner-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}

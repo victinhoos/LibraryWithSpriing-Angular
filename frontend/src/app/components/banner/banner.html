@@ -1,0 +1,23 @@
+<section id = "banner">
+    <div class="banner-container" (mouseenter)="stopAutoPlay()" (mouseleave)="startAutoPlay()">
+    
+      <div *ngFor="let slide of slides; let i = index"
+           class="banner-item"
+           [class.active]="i === currentIndex">
+    
+        <a [routerLink]="slide.link">
+          <picture>
+            <source media="(max-width: 600px)" [srcset]="'assets/imgs/banner/Smartphone/' + slide.id + '.png'">
+    
+            <source media="(max-width: 900px)" [srcset]="'assets/imgs/banner/Tablet/' + slide.id + '.png'">
+    
+            <source media="(max-width: 1366px)" [srcset]="'assets/imgs/banner/Notebook/' + slide.id + '.png'">
+    
+            <img [src]="'assets/imgs/banner/Desktop/' + slide.id + '.png'"
+                 [alt]="slide.title">
+          </picture>
+        </a>
+    
+      </div>
+    </div>
+</section>
