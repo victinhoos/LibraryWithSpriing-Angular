@@ -5,20 +5,6 @@ footer {
     color: var(--text-color-primary);
 }
 
-.footer-decoration a {
-    color: var(--secondary-color);
-    cursor: pointer;
-}
-.footer-redes-socais, 
-.footer-informacao {
-    margin: 0;        
-}
-
-.footer-card h1, 
-.footer-card h2 {
-    margin-top: 0;    
-    margin-bottom: 1rem; 
-}
 .footer-top {
     display: flex;
     align-items: flex-start;
@@ -28,6 +14,42 @@ footer {
 .footer-card {
     flex: 1;
     max-width: 300px;
+}
+
+.footer-card h1, 
+.footer-card h2 {
+    margin-top: 0;    
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.footer-decoration a {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.footer-redes-socais, 
+.footer-informacao {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-informacao li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-informacao a,
+.footer-redes-socais a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer-bottom {
