@@ -19,12 +19,13 @@
 ![Badge CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ![Badge License](http://img.shields.io/static/v1?label=LICENSE&message=MIT&color=BLUE&style=for-the-badge)
-## ⚠️ Atenção
 
+# ⚠️ Atenção
 Está incompleto o README.MD
+
 ## 📝 Descrição do Projeto
 
-
+O projeto nasceu com a intenção de reforçar o aprendizado de forma prática, criando uma aplicação completa que integra frontend  (Angular + TypeScript) com um backend  (Spring Boot), explorando boas práticas de arquitetura, comunicação via REST API, autenticação, tratamento de erros, validações, testes e deploy.
 
 ## 🎟 Em Funcionamento:
 
@@ -46,9 +47,9 @@ Está incompleto o README.MD
 * ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white) **Nginx**
 * ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) **Docker**
 
-## 📂 UMLs
 
-https://miro.com/app/board/uXjVG92mRHQ=/?focusWidget=3458764656157229284
+
+
 
 ```bash
 
